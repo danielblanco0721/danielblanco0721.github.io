@@ -100,4 +100,46 @@ const SkillsList = () => {
           {Object.entries(skills).map(([category]) => (
             <li key={category} className="w-full">
               <div
-                onClick={() => tog
+                onClick={() => toggleItem(category)}
+                className="w-full cursor-pointer overflow-hidden rounded-2xl bg-gray-900 transition-all hover:bg-opacity-80 drop-shadow-[2px_2px_0_#7836cf]"
+              >
+                <div className="flex items-center gap-3 p-4">
+                  {CategoryIcons[category]}
+                  <div className="flex grow items-center justify-between gap-2">
+                    <span className="text-lg font-bold text-white drop-shadow-[1px_1px_0_#7836cf]">
+                      {category}
+                    </span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className={`h-6 w-6 text-[#6a2cbb] transition-transform ${
+                        openItem === category ? "rotate-180" : ""
+                      }`}
+                    >
+                      <path d="M12 15.9999L5.636 9.6359L7.05 8.2217L12 13.1714L16.95 8.2217L18.364 9.6359L12 15.9999Z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  className={`px-4 transition-all duration-300 ${
+                    openItem === category
+                      ? "max-h-[500px] pb-4 opacity-100"
+                      : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <p className="text-sm text-gray-300">
+                    {skills[category]}
+                  </p>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default SkillsList;
