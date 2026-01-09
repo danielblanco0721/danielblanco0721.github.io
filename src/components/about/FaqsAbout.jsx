@@ -1,94 +1,103 @@
 import React, { useState } from "react";
 
 const CategoryIcons = {
-  "Tecnologías Backend": CategoryIcons["Web Development"],
-  "Experiencia Profesional": CategoryIcons["Web Development"],
-  "Formación Profesional": CategoryIcons["UI/UX Design & Prototyping"],
-  "Trabajo en Equipo": CategoryIcons["Web Development"],
-  "Metodologías y Flujo de Trabajo": CategoryIcons["Web Development"],
-};
+  "Tecnologías Backend": (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="text-primary h-6 w-6 opacity-70"
+    >
+      <path d="M21 3C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21ZM20 11H4V19H20V11ZM20 5H4V9H20V5Z" />
+    </svg>
+  ),
 
+  "Experiencia Profesional": (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="text-primary h-6 w-6 opacity-70"
+    >
+      <path d="M7 2H17V6H22V22H2V6H7V2ZM9 4V6H15V4H9Z" />
+    </svg>
+  ),
+
+  "Formación Profesional": (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="text-primary h-6 w-6 opacity-70"
+    >
+      <path d="M12 2L1 7L12 12L23 7L12 2ZM1 17L12 22L23 17V9L12 14L1 9V17Z" />
+    </svg>
+  ),
+
+  "Trabajo en Equipo y Comunicación": (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="text-primary h-6 w-6 opacity-70"
+    >
+      <path d="M16 11C17.6569 11 19 9.65685 19 8C19 6.34315 17.6569 5 16 5C14.3431 5 13 6.34315 13 8C13 9.65685 14.3431 11 16 11ZM8 11C9.65685 11 11 9.65685 11 8C11 6.34315 9.65685 5 8 5C6.34315 5 5 6.34315 5 8C5 9.65685 6.34315 11 8 11ZM8 13C5.79086 13 2 14.7909 2 17V19H14V17C14 14.7909 10.2091 13 8 13ZM16 13C15.724 13 15.438 13.018 15.148 13.05C16.804 14.143 18 15.792 18 17V19H22V17C22 14.7909 18.2091 13 16 13Z" />
+    </svg>
+  ),
+
+  "Metodologías y Flujo de Trabajo": (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="text-primary h-6 w-6 opacity-70"
+    >
+      <path d="M3 3H21V7H3V3ZM3 9H21V13H3V9ZM3 15H21V21H3V15Z" />
+    </svg>
+  ),
+};
 
 const SkillsList = () => {
   const [openItem, setOpenItem] = useState(null);
 
   const skills = {
     "Tecnologías Backend": [
-      "Trabajo principalmente con Laravel (PHP) para el desarrollo de APIs REST, lógica de negocio y sistemas empresariales. Manejo bases de datos relacionales como MySQL y PostgreSQL, así como validación y procesamiento de datos mediante archivos Excel/CSV. Complemento el backend con conocimientos en Linux, Apache y despliegues en entornos de producción."
+      "Trabajo principalmente como desarrollador backend utilizando Laravel (PHP) para la construcción de APIs REST, lógica de negocio y sistemas empresariales. Manejo bases de datos relacionales como MySQL, validación y procesamiento de datos mediante archivos Excel/CSV, autenticación, roles y permisos. Tengo experiencia administrando entornos Linux y servidores Apache en producción. El frontend lo utilizo como complemento mediante Vue.js y Tailwind CSS."
     ],
 
     "Experiencia Profesional": [
-      "Cuento con experiencia profesional desarrollando y manteniendo aplicaciones web empresariales en producción. He trabajado en sistemas multiempresa, módulos administrativos, gestión de órdenes y tickets, autenticación, roles y permisos, así como en la corrección de incidencias reales en entornos productivos."
+      "Cuento con experiencia profesional desarrollando y manteniendo aplicaciones web empresariales en producción. He trabajado en sistemas multiempresa, módulos administrativos, gestión de órdenes, inventario y tickets, integraciones mediante APIs REST y resolución de incidencias reales en sistemas activos."
     ],
 
     "Formación Profesional": [
-      "Soy Ingeniero Físico de la Universidad Nacional de Colombia. Mi formación me ha brindado una sólida base en análisis matemático, modelado y resolución de problemas complejos, habilidades que aplico directamente al desarrollo de software y al diseño de soluciones backend robustas."
+      "Soy Ingeniero Físico, con sólida formación en matemáticas, modelado, análisis de datos y resolución de problemas complejos. Esta base me permite abordar el desarrollo de software desde una perspectiva analítica, estructurada y orientada a la eficiencia y estabilidad de los sistemas."
     ],
 
-    "Trabajo en Equipo": [
-      "He trabajado en conjunto con equipos frontend y de soporte, participando en la definición de requerimientos técnicos, integración de APIs y resolución de incidencias. Me caracterizo por una comunicación técnica clara, responsabilidad en producción y enfoque en soluciones mantenibles."
+    "Trabajo en Equipo y Comunicación": [
+      "He trabajado en equipos multidisciplinarios colaborando con desarrolladores frontend, personal de soporte y áreas administrativas. Me caracterizo por una comunicación técnica clara, responsabilidad en entornos productivos y enfoque en soluciones mantenibles y bien documentadas."
     ],
 
     "Metodologías y Flujo de Trabajo": [
-      "He trabajado bajo metodologías ágiles como Scrum y Kanban, participando en sprints, revisión de código y despliegues controlados. Utilizo control de versiones con Git y sigo flujos de trabajo orientados a la estabilidad del sistema y a la entrega incremental de funcionalidades."
+      "Trabajo bajo metodologías ágiles como Scrum y Kanban, participando en planificación de tareas, sprints, control de versiones con Git y despliegues controlados a producción. Tengo experiencia en ambientes de desarrollo y producción, priorizando la estabilidad del sistema y la mejora continua."
     ],
   };
-
 
   const toggleItem = (item) => {
     setOpenItem(openItem === item ? null : item);
   };
 
   return (
-    <div className="flex flex-col items-center text-left mx-auto max-w-6xl px-4">
-      <div className="site-container mt-10">
-        <h2 class="text-4xl font-bold flex flex-col items-center gap-6 text-center whitespace-nowrap text-white md:flex-row md:items-center md:text-end">
-          <span class="hidden h-1.5 grow rounded-lg drop-shadow-[2px_2px_0_#0debd8] bg-[#7836cf] md:block"></span>
-          <span class="drop-shadow-[2px_2px_0_#7836cf]">Mas Sobre Mi</span>
+    <div className="mx-auto max-w-6xl px-4 text-left flex flex-col items-center">
+      <div className="mt-10 w-full">
+        <h2 className="text-4xl font-bold flex flex-col items-center gap-6 text-center text-white md:flex-row md:items-center md:text-end">
+          <span className="hidden h-1.5 grow rounded-lg bg-[#7836cf] drop-shadow-[2px_2px_0_#0debd8] md:block"></span>
+          <span className="drop-shadow-[2px_2px_0_#7836cf]">
+            Más sobre mí
+          </span>
         </h2>
-        <ul className="mt-4 space-y-4 text-lg">
-          {Object.entries(skills).map(([category, items]) => (
+
+        <ul className="mt-6 space-y-4 text-lg">
+          {Object.entries(skills).map(([category]) => (
             <li key={category} className="w-full">
               <div
-                onClick={() => toggleItem(category)}
-                className="bg-gray-900 hover:bg-opacity-80 w-full cursor-pointer overflow-hidden rounded-2xl text-left transition-all drop-shadow-[2px_2px_0_#7836cf]"
-              >
-                <div className="flex items-center gap-3 p-4">
-                  {CategoryIcons[category]}
-                  <div className="flex grow items-center justify-between gap-2">
-                    <div className="max-w-[200px] min-w-0 overflow-hidden md:max-w-none">
-                      <span className="block truncate text-lg text-white drop-shadow-[1px_1px_0_#7836cf] font-bold">
-                        {category}
-                      </span>
-                    </div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className={`h-6 w-6 shrink-0 transform text-[#6a2cbb] transition-transform ${
-                        openItem === category ? "rotate-180" : ""
-                      }`}
-                    >
-                      <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
-                    </svg>
-                  </div>
-                </div>
-
-                <div
-                  className={`px-4 transition-all duration-300 ${
-                    openItem === category
-                      ? "max-h-[500px] pb-4 opacity-100"
-                      : "max-h-0 opacity-0"
-                  }`}
-                >
-                  <p className="text-[0.8em] text-white">{skills[category]}</p>
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
-};
-export default SkillsList;
+                onClick={() => tog
