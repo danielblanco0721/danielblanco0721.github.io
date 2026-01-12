@@ -1,4 +1,3 @@
----
 import { HiArrowRight } from "react-icons/hi";
 import MiFoto from "../../../assets/img/MiFoto.png";
 ---
@@ -14,35 +13,64 @@ import MiFoto from "../../../assets/img/MiFoto.png";
   <div
     class="mx-auto flex max-w-4xl flex-col-reverse items-stretch gap-6 md:flex-row"
   >
+    <!-- Imagen -->
     <div
       class="bg-base-900 border-none flex w-full items-center justify-center overflow-hidden rounded-2xl border p-0 shadow-lg md:w-1/3 drop-shadow-[4px_4px_0_#7836cf]"
     >
       <img
         src={MiFoto.src}
-        alt="Foto de Daniel"
+        alt="Foto de Daniel Esteban Blanco"
         class="h-full w-full object-cover"
       />
     </div>
 
+    <!-- Texto -->
     <div
       class="bg-gray-900 border-none flex w-full flex-col justify-center rounded-2xl border p-6 shadow-lg md:w-2/3 drop-shadow-[4px_4px_0_#7836cf]"
     >
       <h2 class="text-white text-4xl font-bold drop-shadow-[2px_2px_0_#7836cf]">
-        Sobre Mí
+        Sobre mí
       </h2>
-      <p class="mt-2 font-semibold">
-        Mi nombre es Daniel Esteban, soy Desarrollador de Software y actualmente me
-        desempeño como Web Developer, con un enfoque en el Back-End y la
-        experiencia del usuario. Trabajo con tecnologías como React, Node.js,
-        Astro, JavaScript, TypeScript, Bootstrap, Tailwind CSS, SASS, Figma,
-        entre otras.
+
+      <p class="mt-3 text-neutral-300 font-semibold leading-relaxed">
+        Soy <span class="text-primary font-bold">Daniel Esteban Blanco</span>,
+        <span class="text-primary font-bold">
+          Ingeniero Físico y Desarrollador Backend
+        </span>,
+        enfocado en la construcción de sistemas robustos, escalables y orientados
+        a procesos empresariales.
+      </p>
+
+      <p class="mt-3 text-neutral-300 leading-relaxed">
+        Trabajo principalmenteíncipalmente en el <span class="font-semibold">backend</span>,
+        desarrollando APIs, lógica de negocio, sistemas multiempresa, validación
+        de datos y automatización de procesos, utilizando tecnologías como
+        <span class="text-primary italic">
+          {" "}Laravel, PHP, MySQL, PostgreSQL, Node.js y Python
+        </span>.
+      </p>
+
+      <p class="mt-3 text-neutral-300 leading-relaxed">
+        Como complemento, cuento con experiencia en
+        <span class="font-semibold"> frontend</span>, integrando interfaces con
+        <span class="text-primary italic">
+          {" "}Vue.js, React, JavaScript y Tailwind CSS
+        </span>,
+        asegurando una correcta comunicación cliente-servidor y una experiencia
+        de usuario clara y eficiente.
+      </p>
+
+      <p class="mt-3 text-neutral-300 leading-relaxed">
+        Mi formación en ingeniería me aporta un enfoque analítico, capacidad de
+        abstracción y resolución estructurada de problemas, lo que aplico tanto
+        en desarrollo de software como en arquitectura de sistemas.
       </p>
 
       <a
         href="/about"
-        class="group mt-4 inline-flex items-center text-primary font-bold transition-all"
+        class="group mt-5 inline-flex items-center text-primary font-bold transition-all"
       >
-        Ver más sobre mí
+        Conocer más sobre mi perfil
         <HiArrowRight
           className="ml-1 transition-transform duration-200 group-hover:translate-x-1"
           size={18}
