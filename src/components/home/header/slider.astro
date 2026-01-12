@@ -20,24 +20,28 @@ const technologies = [
 <div class="relative overflow-x-hidden px-8 py-8">
   <div class="animate-scroll hover:animate-paused flex w-max gap-12 md:gap-20">
     {
-      technologies.concat(technologies, technologies).map((tech) => (
-        <div class="group flex items-center gap-2 transition-all duration-300">
-          <img
-            src={`/svg/${tech}.svg`}
-            alt={tech}
-            class="h-7 w-auto object-contain  transition-transform group-hover:scale-110"
-            width="30"
-            height="30"
-            loading="lazy"
-          />
-          <span class="text-lg font-medium text-white">
-            {tech.charAt(0).toUpperCase() + tech.slice(1)}
-          </span>
-        </div>
-      ))
+      technologies
+        .concat(technologies, technologies)
+        .map((tech, index) => (
+          <div
+            key={`${tech.name}-${index}`}
+            class="group flex items-center gap-2 transition-all duration-300"
+          >
+            <img
+              src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.icon}/${tech.icon}-original.svg`}
+              alt={tech.name}
+              class="h-7 w-auto object-contain transition-transform group-hover:scale-110"
+              loading="lazy"
+            />
+            <span class="text-lg font-medium text-white">
+              {tech.name}
+            </span>
+          </div>
+        ))
     }
   </div>
 </div>
+
 
 <style is:global>
   @keyframes scroll {
@@ -48,6 +52,7 @@ const technologies = [
       transform: translateX(-50%);
     }
   }
+
   .animate-scroll {
     animation: scroll 60s linear infinite;
   }
@@ -58,3 +63,4 @@ const technologies = [
     }
   }
 </style>
+
