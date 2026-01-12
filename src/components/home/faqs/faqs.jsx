@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; 
 
 const CategoryIcons = {
   "Web Development": (
@@ -38,19 +38,19 @@ const SkillsList = () => {
 
   const skills = {
     "¿Qué tecnologías uso?": [
-      "Actualmente trabajo con tecnologías como React, Next.js, Vue.js, Astro, tailwind, Boostrap y demas librerias y frameworks para el frontend y en el backend trabajo con Node.js, Express, MongoDB, Firebase, entre otras.",
+      "Trabajo principalmente en el desarrollo backend y web utilizando PHP y Laravel para la construcción de APIs y sistemas robustos, junto con bases de datos como MySQL y PostgreSQL. También utilizo Node.js cuando el proyecto lo requiere, y en el frontend integro tecnologías como Vue.js, React, Astro y Tailwind CSS para construir interfaces modernas y funcionales.",
     ],
     "Mi Experiencia": [
-      "Tengo experiencia trabajando en startups y consultoras tecnológicas, desarrollando y maquetando sitios web a partir de diseños en Figma. Para ello, utilizo tecnologías frontend como Astro y React, junto con Tailwind CSS y otras librerías y frameworks para el estilizado y la optimización de interfaces.",
+      "He trabajado en el desarrollo y mantenimiento de aplicaciones web orientadas a procesos empresariales, participando en la creación de sistemas internos, plataformas administrativas y soluciones a medida. Mi enfoque está en la lógica de negocio, la estabilidad del sistema y la integración eficiente entre frontend y backend.",
     ],
-    "Mi formacion": [
-      "Estudié una tecnicatura en automatización de grado universitaria en el ITU, lo que me brindó las bases en programación. Posteriormente, decidí enfocarme en el desarrollo web y de software estudiando en el ITU. Ademas, realicé diversos cursos, diplomados y capacitaciones en grandes universidades Argentinas, como la UTN y el Instituto Tecnológico Universitario, tambien, complemento mi formación con el aprendizaje autodidacta, lo que me permite mantenerme actualizado con los avances tecnológicos en el desarrollo de software.",
+    "Mi formación": [
+      "Soy Ingeniero Físico, formación que me permitió desarrollar una base sólida en análisis matemático, modelamiento y resolución de problemas complejos. Complementé esta formación con experiencia práctica en desarrollo de software y aprendizaje autodidacta continuo en tecnologías web, bases de datos y arquitectura de sistemas.",
     ],
     "¿Cómo trabajo en equipo?": [
-      "Tengo experiencia trabajando en equipos multidisciplinarios, donde me he encargado del desarrollo frontend de aplicaciones web. Para ello, utilizo metodologías ágiles como Scrum y Kanban, además de herramientas de control de versiones como Git y GitHub para gestionar el flujo de trabajo. También cuento con experiencia en el uso de herramientas de gestión de proyectos como Trello y Jira, facilitando la organización y colaboración dentro del equipo.",
+      "Trabajo de manera colaborativa en equipos multidisciplinarios, comunicándome de forma clara con diseñadores, desarrolladores y perfiles no técnicos. Me adapto fácilmente a flujos de trabajo establecidos y priorizo la calidad del código, la documentación y la mantenibilidad de los sistemas.",
     ],
-    "Metodolgias Agiles": [
-      "He trabajado con metodologías ágiles como Scrum y Kanban. En Scrum, participé en sprints de dos semanas, donde al finalizar cada sprint realizaba un pull request (PR) con mi trabajo, el cual pasaba por una fase de revisión y corrección antes de ser fusionado y enviado a producción. También he trabajado con Kanban, utilizando tableros para gestionar tareas y moverlas según su estado de progreso. Además, participé en reuniones diarias (dailies) para planificar y reportar avances del proyecto, asegurando una comunicación eficiente dentro del equipo.",
+    "Metodologías ágiles": [
+      "Tengo experiencia trabajando con metodologías ágiles como Scrum y Kanban, participando en planificación de tareas, seguimiento de avances y entregas iterativas. Utilizo herramientas como Git y GitHub para el control de versiones y mantengo buenas prácticas en revisión de código y despliegue de aplicaciones.",
     ],
   };
 
@@ -111,4 +111,5 @@ const SkillsList = () => {
     </div>
   );
 };
+
 export default SkillsList;
