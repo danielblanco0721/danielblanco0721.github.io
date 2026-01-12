@@ -1,52 +1,70 @@
-<section class="site-container mt-14 mx-auto max-w-6xl px-4">
-  <div class="site-container mt-14">
-    <h2
-      class="text-4xl font-bold flex flex-col items-center gap-6 text-center whitespace-nowrap text-white md:flex-row md:items-center md:text-start"
-    >
-      <span class="drop-shadow-[2px_2px_0_#7836cf]">Tecnologías</span>
-      <span
-        class="hidden h-1.5 grow rounded-lg drop-shadow-[2px_2px_0_#0debd8] bg-[#7836cf] md:block"
-      ></span>
+<section className="site-container mt-14 mx-auto max-w-6xl px-4">
+  {/* Título */}
+  <div className="mt-14">
+    <h2 className="text-4xl font-bold flex flex-col items-center gap-6 text-center text-white md:flex-row md:text-start">
+      <span className="drop-shadow-[2px_2px_0_#7836cf]">
+        Tecnologías
+      </span>
+      <span className="hidden h-1.5 grow rounded-lg bg-[#7836cf] md:block" />
     </h2>
   </div>
 
-  <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+  {/* Skills */}
+  <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
     {[
       // Backend principal
-      { name: "Laravel", icon: "laravel" },
-      { name: "PHP", icon: "php" },
-      { name: "MySQL", icon: "mysql" },
-      { name: "PostgreSQL", icon: "postgresql" },
+      { name: "Laravel", icon: "laravel", level: 85 },
+      { name: "PHP", icon: "php", level: 80 },
+      { name: "MySQL", icon: "mysql", level: 75 },
+      { name: "PostgreSQL", icon: "postgresql", level: 80 },
 
-      // Backend complementario / scripting
-      { name: "Python", icon: "python" },
-      { name: "Node.js", icon: "nodejs" },
+      // Backend complementario
+      { name: "Python", icon: "python", level: 60 },
+      { name: "Node.js", icon: "nodejs", level: 65 },
 
-      // Frontend base y frameworks
-      { name: "HTML5", icon: "html5" },
-      { name: "CSS3", icon: "css3" },
-      { name: "JavaScript", icon: "javascript" },
-      { name: "Vue.js", icon: "vuejs" },
-      { name: "React", icon: "react" },
-      { name: "Tailwind CSS", icon: "tailwindcss" },
+      // Frontend
+      { name: "HTML5", icon: "html5", level: 85 },
+      { name: "CSS3", icon: "css3", level: 80 },
+      { name: "JavaScript", icon: "javascript", level: 75 },
+      { name: "Vue.js", icon: "vuejs", level: 80 },
+      { name: "React", icon: "react", level: 70 },
+      { name: "Tailwind CSS", icon: "tailwindcss", level: 85 },
 
-      // Infraestructura y herramientas
-      { name: "Linux", icon: "linux" },
-      { name: "Apache", icon: "apache" },
-      { name: "Git", icon: "git" },
+      // Infraestructura
+      { name: "Linux", icon: "linux", level: 75 },
+      { name: "Apache", icon: "apache", level: 70 },
+      { name: "Git", icon: "git", level: 80 },
     ].map((skill) => (
-      <div class="relative group" key={skill.name}>
-        <div class="absolute inset-0 -z-10 rounded-lg blur-3xl opacity-0 transition-opacity group-hover:opacity-100" />
-
-        <div class="flex flex-col items-center bg-gray-900 p-4 drop-shadow-[4px_4px_0_#7836cf] rounded-lg shadow-md transition-transform hover:scale-105">
+      <div key={skill.name} className="group relative">
+        <div className="flex flex-col items-center bg-gray-900 p-4 rounded-lg shadow-md transition-all duration-300 hover:scale-105 drop-shadow-[4px_4px_0_#7836cf]">
+          
+          {/* Icono */}
           <img
             src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.icon}/${skill.icon}-original.svg`}
             alt={skill.name}
-            class="w-12 h-12"
+            className="w-12 h-12 object-contain"
+            loading="lazy"
           />
-          <p class="mt-2 text-white text-lg font-semibold drop-shadow-[1px_1px_0_#7836cf]">
+
+          {/* Nombre */}
+          <p className="mt-2 text-white text-lg font-semibold">
             {skill.name}
           </p>
+
+          {/* Barra de progreso */}
+          <div className="mt-3 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="flex justify-between text-sm text-gray-300 mb-1">
+              <span>Experticia</span>
+              <span>{skill.level}%</span>
+            </div>
+            <div className="h-2 w-full bg-gray-700 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-[#7836cf] rounded-full transition-all duration-700"
+                style={{ width: `${skill.level}%` }}
+              />
+            </div>
+          </div>
+
         </div>
       </div>
     ))}
