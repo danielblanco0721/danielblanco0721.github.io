@@ -1,62 +1,74 @@
-<section className="site-container mt-14 mx-auto max-w-6xl px-4">
-  {/* Título */}
-  <div className="mt-14">
-    <h2 className="text-4xl font-bold flex flex-col items-center gap-6 text-center text-white md:flex-row md:text-start">
-      <span className="drop-shadow-[2px_2px_0_#7836cf]">
-        Tecnologías
-      </span>
-      <span className="hidden h-1.5 grow rounded-lg bg-[#7836cf] md:block" />
+<section class="site-container mt-14 mx-auto max-w-6xl px-4">
+  <div class="site-container mt-14">
+    <h2
+      class="text-4xl font-bold flex flex-col items-center gap-6 text-center whitespace-nowrap text-white md:flex-row md:items-center md:text-start"
+    >
+      <span class="drop-shadow-[2px_2px_0_#7836cf]">Tecnologías</span>
+      <span
+        class="hidden h-1.5 grow rounded-lg drop-shadow-[2px_2px_0_#0debd8] bg-[#7836cf] md:block"
+      ></span>
     </h2>
   </div>
 
-  {/* Grid */}
-  <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+  <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
     {[
+      // Backend principal
       { name: "Laravel", icon: "laravel", level: 85 },
       { name: "PHP", icon: "php", level: 80 },
       { name: "MySQL", icon: "mysql", level: 75 },
       { name: "PostgreSQL", icon: "postgresql", level: 80 },
-      { name: "Python", icon: "python", level: 60 },
-      { name: "Node.js", icon: "nodejs", level: 65 },
+
+      // Backend complementario / scripting
+      { name: "Python", icon: "python", level: 65 },
+      { name: "Node.js", icon: "nodejs", level: 70 },
+
+      // Frontend base y frameworks
       { name: "HTML5", icon: "html5", level: 85 },
       { name: "CSS3", icon: "css3", level: 80 },
       { name: "JavaScript", icon: "javascript", level: 75 },
       { name: "Vue.js", icon: "vuejs", level: 80 },
       { name: "React", icon: "react", level: 70 },
       { name: "Tailwind CSS", icon: "tailwindcss", level: 85 },
+
+      // Infraestructura y herramientas
       { name: "Linux", icon: "linux", level: 75 },
       { name: "Apache", icon: "apache", level: 70 },
       { name: "Git", icon: "git", level: 80 },
     ].map((skill) => (
-      <div key={skill.name} className="relative group">
-        {/* Card */}
-        <div className="relative flex flex-col items-center bg-gray-900 p-4 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 drop-shadow-[4px_4px_0_#7836cf]">
+      <div class="relative group" key={skill.name}>
+        <div class="absolute inset-0 -z-10 rounded-lg blur-3xl opacity-0 transition-opacity group-hover:opacity-100" />
 
-          {/* Icono (NO TOCADO) */}
+        <div class="flex flex-col items-center bg-gray-900 p-4 drop-shadow-[4px_4px_0_#7836cf] rounded-lg shadow-md transition-transform hover:scale-105">
+          
+          {/* ICONO — NO SE TOCA */}
           <img
             src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.icon}/${skill.icon}-original.svg`}
             alt={skill.name}
-            className="w-12 h-12 object-contain"
+            class="w-12 h-12"
             loading="lazy"
           />
 
-          {/* Nombre */}
-          <p className="mt-2 text-white text-lg font-semibold">
+          {/* NOMBRE — NO SE TOCA */}
+          <p class="mt-2 text-white text-lg font-semibold drop-shadow-[1px_1px_0_#7836cf]">
             {skill.name}
           </p>
 
-          {/* Porcentaje (texto) */}
-          <span className="mt-1 text-sm text-neutral-400 opacity-0 group-hover:opacity-100 transition-opacity">
-            {skill.level}% de dominio
-          </span>
+          {/* NIVEL DE EXPERTICIA — NUEVO, CONTROLADO */}
+          <div class="mt-2 w-full">
+            <div class="flex justify-between text-xs text-neutral-400 mb-1">
+              <span>Experticia</span>
+              <span>{skill.level}%</span>
+            </div>
 
-          {/* Barra ABSOLUTA (no afecta layout) */}
-          <div className="absolute bottom-0 left-0 h-1 w-full bg-gray-700 overflow-hidden rounded-b-lg">
-            <div
-              className="h-full bg-[#7836cf] transition-all duration-700"
-              style={{ width: `${skill.level}%` }}
-            />
+            {/* Barra MUY delgada, no altera layout */}
+            <div class="h-1 w-full bg-neutral-700 rounded-full overflow-hidden">
+              <div
+                class="h-full bg-[#7836cf] transition-all duration-700"
+                style={{ width: `${skill.level}%` }}
+              ></div>
+            </div>
           </div>
+
         </div>
       </div>
     ))}
