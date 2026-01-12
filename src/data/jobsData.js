@@ -12,7 +12,7 @@ export const jobs = [
     ],
   },
   {
-    title: "Desarrollador Backend / Full Stack – Plataforma Delivvery",
+    title: "Desarrollador Backend / Full Stack – Plataforma Delivery",
     time: ["08/2024 - 02/2025"],
     description:
       "Desarrollé una plataforma web integral llamada Delivvery, orientada a la gestión de inventarios y control de productos a gran escala para múltiples referencias.",
@@ -35,6 +35,19 @@ export const jobs = [
       "Mejoras en el frontend utilizando Vue.js para una experiencia más fluida.",
       "Optimización y ajustes sobre base de datos PostgreSQL.",
       "Corrección de errores, mejoras de rendimiento y estabilidad del sistema.",
+    ],
+  },
+  {
+    title: "Desarrollador Backend / IA – E-commerce & Chatbot",
+    time: ["08/2025 - 10/2025"],
+    description:
+      "Desarrollo de un e-commerce sencillo y un chatbot inteligente orientado a la automatización de atención y consultas de usuarios.",
+    list: [
+      "Desarrollo de un e-commerce básico utilizando Python.",
+      "Implementación de funcionalidades de catálogo de productos y flujo de compra.",
+      "Diseño y desarrollo de un chatbot con inteligencia artificial utilizando Rasa.",
+      "Definición de intents, stories y respuestas para automatizar la interacción con usuarios.",
+      "Integración del chatbot como canal de soporte y asistencia dentro del sistema.",
     ],
   },
   {
