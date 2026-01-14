@@ -51,18 +51,23 @@ const links = [
     <!-- Lista de Links -->
     <div class="w-full max-w-xl space-y-4">
       {
-        links.map((link) => (
-          <a
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="block font-bold w-full rounded-lg bg-primary hover:bg-secondary drop-shadow-[2px_2px_0_#0debd8] px-6 py-3 text-center text-white transition "
-          >
-            {link.label}
-          </a>
-        ))
+        links.map((link) => {
+          const isMail = link.href.startsWith("mailto:");
+
+          return (
+            <a
+              href={link.href}
+              target={isMail ? undefined : "_blank"}
+              rel={isMail ? undefined : "noopener noreferrer"}
+              class="block font-bold w-full rounded-lg bg-primary hover:bg-secondary drop-shadow-[2px_2px_0_#0debd8] px-6 py-3 text-center text-white transition"
+            >
+              {link.label}
+            </a>
+          );
+        })
       }
     </div>
+
   </section>
 </Layout>
 
