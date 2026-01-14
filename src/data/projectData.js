@@ -57,7 +57,7 @@ export const proyectos = [
     descripcion:
       "Aplicación que permite ingresar una lista de participantes y realizar automáticamente el sorteo del amigo secreto. Proyecto sencillo enfocado en lógica, automatización y experiencia de usuario.",
     imagen: secret.src,
-    tecnologias: ["Python", "Rasa", "MySQL", "IA"],
+    tecnologias: ["HTML5", "CSS3"],
     demo: "https://tienda-virtual-ia.onrender.com/",
     codigo: "https://github.com/danielblanco0721/challenge-amigo-secreto_esp-main",
     categoria: "frontend",
