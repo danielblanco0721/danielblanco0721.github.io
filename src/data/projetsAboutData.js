@@ -1,6 +1,7 @@
 import bygnet from "../assets/img-projects/bygnet.jpeg";
 import delivery from "../assets/img-projects/delivery.png";
 import bygtrack from "../assets/img-projects/bygtrack.png";
+import quickbite from "../assets/img-projects/quickbite.png";
 
 export const proyectos = [
   {
@@ -24,4 +25,12 @@ export const proyectos = [
       demo: "https://bygtrack.hostingbygnet.com/bygtrack/public/",
       categoria: "backend",
     },
+    {
+        titulo: "QuickBite",
+        imagen: quickbite.src,
+        tecnologias: ["Python", "Rasa", "MySQL", "IA"],
+        demo: "https://tienda-virtual-ia.onrender.com/",
+        codigo: "https://github.com/danielblanco0721/tienda_virtual_con_chatbotIA",
+        categoria: "backend",
+      },
 ];
