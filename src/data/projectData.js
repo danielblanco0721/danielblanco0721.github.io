@@ -60,6 +60,6 @@ export const proyectos = [
     tecnologias: ["Python", "Rasa", "MySQL", "IA"],
     demo: "https://tienda-virtual-ia.onrender.com/",
     codigo: "https://github.com/danielblanco0721/challenge-amigo-secreto_esp-main",
-    categoria: "fronted",
+    categoria: "frontend",
   },
 ];
