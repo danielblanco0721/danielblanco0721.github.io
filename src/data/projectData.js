@@ -1,4 +1,4 @@
-import imgNote from "../assets/img-projects/note-app.png";
+import bygnet from "../assets/img-projects/bygnet.jpeg";
 import urbanStyle from "../assets/img-projects/urbanStyle.png";
 import legalWeb from "../assets/img-projects/legalweb.webp";
 import mediCare from "../assets/img-projects/medicare.jpg";
@@ -10,7 +10,7 @@ export const proyectos = [
     titulo: "App organizacion",
     descripcion:
       "App full-stack con funciones CRUD, creacion de tableros y listas, autentificacion de usuarios, desarrollada con MERN stack.",
-    imagen: imgNote.src,
+    imagen: bygnet.src,
     tecnologias: ["React", "Tailwind", "Express", "MongoDB"],
     demo: "https://front-react-todo.onrender.com",
     codigo: "https://github.com/Lautaro-R-collins/Front-react-todo",
