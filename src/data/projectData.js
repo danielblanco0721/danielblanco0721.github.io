@@ -9,7 +9,7 @@ export const proyectos = [
   {
     titulo: "Bygnet Solutions S.A.S",
     descripcion:
-      "Es una aplicación móvil para repartidores que gestiona entregas pendientes en tiempo real. Permite registrar entregas exitosas o no entregadas, incluyendo evidencias como fotos y firma del cliente. Cada acción actualiza automáticamente el estado de las órdenes, mejorando el control y la trazabilidad del proceso.",
+      "Aplicación móvil para repartidores que gestiona entregas pendientes en tiempo real. Permite registrar entregas exitosas o no entregadas, incluyendo evidencias como fotos y firma del cliente. Cada acción actualiza automáticamente el estado de las órdenes, mejorando el control y la trazabilidad del proceso.",
     imagen: bygnet.src,
     tecnologias: ["React Native", "Laravel", "PostgreSQL"],
     codigo: "https://github.com/danielblanco0721/bygnet.git",

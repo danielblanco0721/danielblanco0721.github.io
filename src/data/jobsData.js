@@ -1,16 +1,16 @@
 export const jobs = [
-  {
-    title: "Desarrollador Full Stack – App de Gestión de Entregas",
-    time: ["06/2024 - 08/2024"],
-    description:
-      "Participé en el desarrollo de una aplicación móvil de gestión de entregas diseñada para repartidores. Permite iniciar sesión de forma segura y visualizar las órdenes pendientes asignadas, con información detallada del cliente, dirección y productos. Cada entrega puede marcarse como entregada o no entregada, registrando evidencias como fotografías y firma del cliente. Al finalizar el proceso, el sistema actualiza automáticamente el listado de órdenes, garantizando control, trazabilidad y eficiencia operativa.",
-    list: [
-      "Desarrollo de la aplicación móvil utilizando React Native para repartidores.",
-      "Implementación de endpoints REST en Laravel para la gestión de pedidos, usuarios y estados de entrega.",
-      "Integración entre frontend móvil y backend asegurando consistencia y rendimiento.",
-      "Soporte en pruebas funcionales y ajustes basados en retroalimentación operativa.",
-    ],
-  },
+{
+  title: "Desarrollador Full Stack – App de Gestión de Entregas",
+  time: ["06/2024 - 08/2024"],
+  description:
+    "Participé en el desarrollo de una aplicación móvil de gestión de entregas orientada a repartidores, optimizada para dispositivos Android y iOS. La plataforma permite autenticación segura, visualización de órdenes pendientes y acceso a información detallada del cliente, direcciones y productos. Cada entrega puede registrarse como entregada o no entregada, incorporando evidencias como fotografías y firma digital. Al finalizar cada operación, el sistema actualiza automáticamente el estado de las órdenes, asegurando trazabilidad, control y eficiencia operativa.",
+  list: [
+    "Desarrollo de la aplicación móvil multiplataforma utilizando React Native.",
+    "Diseño e implementación de endpoints REST con Laravel para la gestión de pedidos, usuarios y estados de entrega.",
+    "Integración eficiente entre frontend móvil y backend, priorizando rendimiento y consistencia de datos.",
+    "Soporte en pruebas funcionales, optimización de flujos y ajustes basados en retroalimentación operativa.",
+  ],
+},
   {
     title: "Desarrollador Backend / Full Stack – Plataforma Delivery",
     time: ["08/2024 - 02/2025"],
