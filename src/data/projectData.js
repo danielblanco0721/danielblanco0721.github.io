@@ -1,6 +1,6 @@
 import bygnet from "../assets/img-projects/bygnet.jpeg";
 import delivery from "../assets/img-projects/delivery.png";
-import legalWeb from "../assets/img-projects/legalweb.webp";
+import bygtrack from "../assets/img-projects/bygtrack.png";
 import mediCare from "../assets/img-projects/medicare.jpg";
 import astroFit from "../assets/img-projects/Astrofit.jpg";
 import Verbenas from "../assets/img-projects/challenge-newyze.png";
@@ -25,14 +25,12 @@ export const proyectos = [
     categoria: "fullstack",
   },
   {
-    titulo: "Tienda Artesana",
+    titulo: "Bygtrack",
     descripcion:
-      "Ecommerce Full-Stack para ver, comprar y vender tus productos, con login para usuarios y vendedores.",
-    imagen:
-      "https://i.pinimg.com/736x/c9/70/bf/c970bfbc24489e39418b2c1b1f8f74ef.jpg",
-    tecnologias: ["React", "Node", "Express", "MongoDB"],
-    demo: "https://c21-05-ft-node-react-mirror-frontend-64qbwssi2-muyvisual.vercel.app/",
-    codigo: "https://github.com/No-Country-simulation/c21-05-ft-node-react",
+      "Plataforma Web diseñada para el control y seguimineto de ordenes de pedido desde archivos masivos provenientes de diferentes almacenes .",
+    imagen:bygtrack.src,
+    tecnologias: ["Vue.js", "Laravel", "MySQL"],
+    demo: "https://bygtrack.hostingbygnet.com/bygtrack/public/",
     categoria: "fullstack",
   },
   {
@@ -61,7 +59,7 @@ export const proyectos = [
     titulo: "Legal Staff",
     descripcion:
       "Web desarrollada con Astro y Tailwind, embudo de marketing para estudios jurídicos.",
-    imagen: legalWeb.src,
+    imagen: bygtrack.src,
     tecnologias: ["Astro", "tailwind", "JavaScript"],
     demo: "https://legal-staff.vercel.app/",
     codigo: "https://github.com/Lautaro-R-collins/legal-staff",
