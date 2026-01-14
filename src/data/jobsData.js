@@ -3,7 +3,7 @@ export const jobs = [
     title: "Desarrollador Full Stack – App de Gestión de Entregas",
     time: ["06/2024 - 08/2024"],
     description:
-      "Participé en el desarrollo de una aplicación móvil para la gestión de entregas y repartidores, enfocada en optimizar rutas, control de pedidos y seguimiento operativo en tiempo real.",
+      "Participé en el desarrollo de una aplicación móvil de gestión de entregas diseñada para repartidores. Permite iniciar sesión de forma segura y visualizar las órdenes pendientes asignadas, con información detallada del cliente, dirección y productos. Cada entrega puede marcarse como entregada o no entregada, registrando evidencias como fotografías y firma del cliente. Al finalizar el proceso, el sistema actualiza automáticamente el listado de órdenes, garantizando control, trazabilidad y eficiencia operativa.",
     list: [
       "Desarrollo de la aplicación móvil utilizando React Native para repartidores.",
       "Implementación de endpoints REST en Laravel para la gestión de pedidos, usuarios y estados de entrega.",
