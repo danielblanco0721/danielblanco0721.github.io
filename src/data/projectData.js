@@ -1,5 +1,5 @@
 import bygnet from "../assets/img-projects/bygnet.jpeg";
-import urbanStyle from "../assets/img-projects/urbanStyle.png";
+import delivery from "../assets/img-projects/delivery.png";
 import legalWeb from "../assets/img-projects/legalweb.webp";
 import mediCare from "../assets/img-projects/medicare.jpg";
 import astroFit from "../assets/img-projects/Astrofit.jpg";
@@ -16,13 +16,12 @@ export const proyectos = [
     categoria: "full-stack",
   },
   {
-    titulo: "E-commerce Urban Style",
+    titulo: "Delivery",
     descripcion:
-      "E-commerce funcional de ropa y accesorios, con carrito de compras categorias y pasarela de pago desarrollado en React.",
-    imagen: urbanStyle.src,
-    tecnologias: ["React", "Tailwind", "Firebase"],
-    demo: "https://proyecto-final-rodriguez-sable.vercel.app/",
-    codigo: "https://github.com/Lautaro-R-collins/ProyectoFinal-Rodriguez.git",
+      "Plataforma web diseñada para la gestión integral de inventarios, ventas y entregas, con autenticación y permisos diferenciados por roles (administrador, repartidor y bodeguero). El sistema gestiona la entrada, salida, kardex y entrega de productos de diversas compañías, controlando los valores asociados a cada operación. Además, incorpora cargues masivos desde archivos CSV y dashboards dinámicos que facilitan el monitoreo y análisis de la información.",
+    imagen: delivery.src,
+    tecnologias: ["Vue.js", "Laravel", "PostgreSQL"],
+    demo: "https://delivery.housedev.co/login",
     categoria: "fullstack",
   },
   {

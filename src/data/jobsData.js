@@ -15,7 +15,7 @@ export const jobs = [
     title: "Desarrollador Backend / Full Stack – Plataforma Delivery",
     time: ["08/2024 - 02/2025"],
     description:
-      "Desarrollé una plataforma web integral llamada Delivvery, orientada a la gestión de inventarios y control de productos a gran escala para múltiples referencias.",
+      "Delivery fue una plataforma web de gestión logística y comercial con control de acceso por roles (administrador, repartidor y bodeguero). Permitía gestionar la entrada, salida, kardex y entrega de productos de múltiples compañías, así como el registro de ventas considerando valores de ingreso y egreso. Incluía cargues masivos mediante archivos CSV y dashboards interactivos para la visualización y análisis de datos operativos.",
     list: [
       "Desarrollo del backend en Laravel, estructurando lógica de negocio y control de datos.",
       "Implementación de módulos de inventario, entradas, salidas y control Kardex.",
