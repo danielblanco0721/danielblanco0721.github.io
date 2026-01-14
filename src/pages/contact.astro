@@ -9,7 +9,13 @@ const links = [
   },
   { href: "https://github.com/danielblanco0721/", label: "GitHub" },
 
-  { href: "mailto:danielblanforero@gmail.com", label: "Email" },
+  {
+    href:
+      "mailto:danielblanforero@gmail.com" +
+      "?subject=Contacto%20desde%20tu%20portafolio" +
+      "&body=Hola%20Daniel,%0A%0AHe%20visto%20tu%20portafolio%20y%20me%20gustaría%20ponerme%20en%20contacto%20contigo.%0A%0ASaludos.",
+    label: "Email",
+  },
 ];
 ---
 
@@ -49,24 +55,25 @@ const links = [
     <CopyMail client:visible />
 
     <!-- Lista de Links -->
-    <div class="w-full max-w-xl space-y-4">
-      {
-        links.map((link) => {
-          const isMail = link.href.startsWith("mailto:");
+  <div class="w-full max-w-xl space-y-4">
+  {
+    links.map((link) => {
+      const isMail = link.href.startsWith("mailto:");
 
-          return (
-            <a
-              href={link.href}
-              target={isMail ? undefined : "_blank"}
-              rel={isMail ? undefined : "noopener noreferrer"}
-              class="block font-bold w-full rounded-lg bg-primary hover:bg-secondary drop-shadow-[2px_2px_0_#0debd8] px-6 py-3 text-center text-white transition"
-            >
-              {link.label}
-            </a>
-          );
-        })
-      }
-    </div>
+      return (
+        <a
+          href={link.href}
+          target={isMail ? undefined : "_blank"}
+          rel={isMail ? undefined : "noopener noreferrer"}
+          class="block font-bold w-full rounded-lg bg-primary hover:bg-secondary drop-shadow-[2px_2px_0_#0debd8] px-6 py-3 text-center text-white transition"
+        >
+          {link.label}
+        </a>
+      );
+    })
+  }
+</div>
+
 
   </section>
 </Layout>
