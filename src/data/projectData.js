@@ -7,14 +7,13 @@ import Verbenas from "../assets/img-projects/challenge-newyze.png";
 
 export const proyectos = [
   {
-    titulo: "App organizacion",
+    titulo: "Bygnet Solutions SAS",
     descripcion:
       "App full-stack con funciones CRUD, creacion de tableros y listas, autentificacion de usuarios, desarrollada con MERN stack.",
     imagen: bygnet.src,
-    tecnologias: ["React", "Tailwind", "Express", "MongoDB"],
-    demo: "https://front-react-todo.onrender.com",
-    codigo: "https://github.com/Lautaro-R-collins/Front-react-todo",
-    categoria: "fullstack",
+    tecnologias: ["React Native", "Laravel", "PostgreSQL", "MongoDB"],
+    codigo: "https://github.com/danielblanco0721/bygnet.git",
+    categoria: "Fronted",
   },
   {
     titulo: "E-commerce Urban Style",
