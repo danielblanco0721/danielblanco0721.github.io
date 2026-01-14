@@ -9,11 +9,11 @@ export const proyectos = [
   {
     titulo: "Bygnet Solutions SAS",
     descripcion:
-      "App full-stack con funciones CRUD, creacion de tableros y listas, autentificacion de usuarios, desarrollada con MERN stack.",
+      "BygNet Solution S.A. es una aplicación móvil de gestión de entregas diseñada para repartidores. Permite iniciar sesión de forma segura y visualizar las órdenes pendientes asignadas, con información detallada del cliente, dirección y productos. Cada entrega puede marcarse como entregada o no entregada, registrando evidencias como fotografías y firma del cliente. Al finalizar el proceso, el sistema actualiza automáticamente el listado de órdenes, garantizando control, trazabilidad y eficiencia operativa.",
     imagen: bygnet.src,
-    tecnologias: ["React Native", "Laravel", "PostgreSQL", "MongoDB"],
+    tecnologias: ["React Native", "Laravel", "PostgreSQL"],
     codigo: "https://github.com/danielblanco0721/bygnet.git",
-    categoria: "Fronted",
+    categoria: "full-stack",
   },
   {
     titulo: "E-commerce Urban Style",
