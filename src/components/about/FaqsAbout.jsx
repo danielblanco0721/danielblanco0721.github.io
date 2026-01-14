@@ -41,8 +41,9 @@ const SkillsList = () => {
     ],
 
     "Experiencia Profesional": [
-      "He desarrollado y mantenido aplicaciones web y móviles orientadas a procesos reales de negocio, incluyendo gestión de entregas, inventarios, ventas, trazabilidad y control operativo. He trabajado en sistemas multiempresa, dashboards administrativos, integraciones con APIs REST y resolución de incidencias en entornos productivos. También tengo experiencia en aplicaciones móviles optimizadas para Android y iOS."
+      "Cuento con más de año y medio de experiencia en el sector del desarrollo de software, participando en el desarrollo y mantenimiento de aplicaciones web y móviles en entornos productivos. He trabajado en sistemas de gestión de entregas, inventarios, ventas y trazabilidad, con arquitecturas multiempresa, dashboards administrativos e integraciones mediante APIs REST. Además, tengo experiencia en la optimización y despliegue de aplicaciones móviles para Android y iOS."
     ],
+
 
     "Formación Profesional": [
       "Soy Ingeniero Físico, con una sólida formación en matemáticas, análisis de datos, modelado y resolución de problemas complejos. Esta base me permite diseñar soluciones de software estructuradas, eficientes y escalables, abordando los sistemas desde una perspectiva analítica y lógica."
@@ -86,9 +87,8 @@ const SkillsList = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      className={`h-6 w-6 text-[#6a2cbb] transition-transform ${
-                        openItem === category ? "rotate-180" : ""
-                      }`}
+                      className={`h-6 w-6 text-[#6a2cbb] transition-transform ${openItem === category ? "rotate-180" : ""
+                        }`}
                     >
                       <path d="M12 15.9999L5.636 9.6359L7.05 8.2217L12 13.1714L16.95 8.2217L18.364 9.6359L12 15.9999Z" />
                     </svg>
@@ -96,11 +96,10 @@ const SkillsList = () => {
                 </div>
 
                 <div
-                  className={`px-4 transition-all duration-300 ${
-                    openItem === category
+                  className={`px-4 transition-all duration-300 ${openItem === category
                       ? "max-h-[500px] pb-4 opacity-100"
                       : "max-h-0 opacity-0"
-                  }`}
+                    }`}
                 >
                   <p className="text-sm text-gray-300">{skills[category]}</p>
                 </div>
