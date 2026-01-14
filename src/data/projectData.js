@@ -1,7 +1,7 @@
 import bygnet from "../assets/img-projects/bygnet.jpeg";
 import delivery from "../assets/img-projects/delivery.png";
 import bygtrack from "../assets/img-projects/bygtrack.png";
-import mediCare from "../assets/img-projects/medicare.jpg";
+import agrifresh from "../assets/img-projects/agrifresh.png";
 import astroFit from "../assets/img-projects/Astrofit.jpg";
 import Verbenas from "../assets/img-projects/challenge-newyze.png";
 
@@ -31,18 +31,16 @@ export const proyectos = [
     imagen:bygtrack.src,
     tecnologias: ["Vue.js", "Laravel", "MySQL"],
     demo: "https://bygtrack.hostingbygnet.com/bygtrack/public/",
-    categoria: "fullstack",
+    categoria: "backend",
   },
   {
-    titulo: "Traker Ingresos-Gastos",
+    titulo: "Agrifresh",
     descripcion:
-      "App que realiza operaciones CRUD para agregar, ver, editar y eliminar ingresos/gastos.",
-    imagen:
-      "https://i.pinimg.com/736x/a4/85/c4/a485c4da3e78f4f518ddbcdb6637bacf.jpg",
-    tecnologias: ["React", "contextAPI"],
-    demo: "https://traker-gastos-ingresos.onrender.com/",
-    codigo: "https://github.com/Lautaro-R-collins/Traker-Gastos-Ingresos",
-    categoria: "frontend",
+      "Plataforma web desarrollada con Laravel y Vue.js para la gestión de productos agrícolas con múltiples roles de usuario. Permite registrar productos de diferentes fincas, controlar procesos de desinfección y selección, y gestionar su procesamiento y despacho. La plataforma asegura trazabilidad y control en toda la cadena productiva hasta su comercialización.",
+    imagen: agrifresh.src,
+    tecnologias: ["Laravel", "Vue.js", "PostgreSQL"],
+    demo: "hhttps://new.agrifresh.housedev.co/login",
+    categoria: "fullstack",
   },
   {
     titulo: "App-clima",
@@ -66,11 +64,11 @@ export const proyectos = [
     categoria: "frontend",
   },
   {
-    titulo: "Medicare",
+    titulo: "Agrifresh",
     descripcion:
       "Web desarrollada con Astro y Tailwind, embudo de marketing para Obras Sociales.",
-    imagen: mediCare.src,
-    tecnologias: ["Astro", "tailwind", "JavaScript"],
+    imagen: agrifresh.src,
+    tecnologias: ["Laravel", "Vue.js", "PostgreSQL"],
     demo: "https://obra-social-landing.vercel.app/",
     codigo: "https://github.com/Lautaro-R-collins/obra-social-landing.git",
     categoria: "frontend",
