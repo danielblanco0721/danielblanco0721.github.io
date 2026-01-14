@@ -39,7 +39,7 @@ export const proyectos = [
       "Plataforma web desarrollada con Laravel y Vue.js para la gestión de productos agrícolas con múltiples roles de usuario. Permite registrar productos de diferentes fincas, controlar procesos de desinfección y selección, y gestionar su procesamiento y despacho. La plataforma asegura trazabilidad y control en toda la cadena productiva hasta su comercialización.",
     imagen: agrifresh.src,
     tecnologias: ["Laravel", "Vue.js", "PostgreSQL"],
-    demo: "hhttps://new.agrifresh.housedev.co/login",
+    demo: "https://new.agrifresh.housedev.co/login",
     categoria: "fullstack",
   },
   {
