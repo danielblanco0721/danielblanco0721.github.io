@@ -27,26 +27,6 @@ const SocialIcons = () => {
       >
         <FaGithub className="h-7 w-7" />
       </a>
-
-      <a
-        href="https://x.com/lautarodevelops/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mx-3 text-zinc-400 hover:text-[#69c7c7] drop-shadow-[1px_1px_0_#7836cf]"
-        aria-label="Twitter"
-      >
-        <FaXTwitter className="h-7 w-7" />
-      </a>
-
-      <a
-        href="https://www.instagram.com/lautarodevelops/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mx-3 text-zinc-400 hover:text-[#69c7c7] drop-shadow-[1px_1px_0_#7836cf]"
-        aria-label="Instagram"
-      >
-        <FaInstagram className="h-7 w-7" />
-      </a>
     </div>
   );
 };
